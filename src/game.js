@@ -68,3 +68,5 @@ function handleWindowResize() {
     camera.aspect = WIDTH / HEIGHT;
     camera.updateProjectionMatrix();
 }
+
+var hemisphereLight, shadowLight;
