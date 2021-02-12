@@ -70,3 +70,8 @@ function handleWindowResize() {
 }
 
 var hemisphereLight, shadowLight;
+
+function createLights() {
+    hemisphereLight = new THREE.HemisphereLight(0xaaaaaa,0x000000, .9)
+
+    shadowLight = new THREE.DirectionalLight(0xffffff, .9);
