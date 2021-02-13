@@ -93,3 +93,7 @@ function createLights() {
   scene.add(hemisphereLight);
   scene.add(shadowLight);
 }
+
+Sea = function(){
+  var geom = new THREE.CylinderGeometry(600,600,800,40,10);
+}
