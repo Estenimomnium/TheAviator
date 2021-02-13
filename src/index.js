@@ -39,7 +39,7 @@ function createScene() {
   );
 
   camera.position.x = 0;
-  camera.positiom.z = 200;
+  camera.position.z = 200;
   camera.position.y = 100;
 
   renderer = new THREE.WebGLRenderer({
