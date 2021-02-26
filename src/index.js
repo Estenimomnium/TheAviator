@@ -16,7 +16,7 @@ function init() {
 }
 
 //Сцена, поле зрения, соотношение сторон, рядом с самолетом, вдали от самолета, визуализация, контейнер
-var Sea, camera, scene, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container;
+var Sea, sea, camera, scene, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container;
 
 function createScene() {
 
@@ -116,7 +116,7 @@ Sea = function () {
 
 
 function createSea() {
-    let sea = new Sea();
+    sea = new Sea();
 
     sea.position.y = -600;
 
@@ -125,6 +125,10 @@ function createSea() {
 
 function animation() {
     requestAnimationFrame(animation);
+
+    sea.rotation.z += 1;
+
     renderer.render(scene, camera);
 }
+
 
